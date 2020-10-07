@@ -3,6 +3,7 @@ var fs = require('fs');
 const util = require("util");
 
 const generator = require("./generator");
+const api = require("./api");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 // array of questions for user
@@ -79,7 +80,11 @@ function promptUser() {
 async function init() {
     try {
         const answers = await promptUser();
-        const readMe = generator(answers);
+        // Call GitHub api for user info
+        const userInfo = await api.getUser(answers);
+        console.log("Your GitHub user info: ", userInfo);
+
+        const readMe = generator(answers, userInfo);
         await writeFileAsync("index.md", readMe)
         console.log("Successfully wrote to README!")
     } catch (err) {

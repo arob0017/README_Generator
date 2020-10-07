@@ -1,6 +1,5 @@
 function generateReadMe(answers) {
     return `
-    
     # Title: ${answers.title}
     * ${answers.repo}
     * ${answers.username}
