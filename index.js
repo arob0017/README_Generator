@@ -2,6 +2,8 @@ var inquirer = require("inquirer");
 var fs = require('fs');
 const util = require("util");
 
+const generator = require("./generator");
+
 const writeFileAsync = util.promisify(fs.writeFile);
 // array of questions for user
 function promptUser() {
