@@ -1,20 +1,21 @@
 function generateReadMe(answers) {
     return `
     
-    ####Username: ${answers.username}
-    ####Repository: ${answers.repo}
-    \`\`\`
-    ##Title: ${answers.title}
+    # Title: ${answers.title}
+    #### Username: ${answers.username}
+    #### Repository: ${answers.repo}
     
-    ###Contents: ${answers.contents}
-    ###Description ${answers.description}
-    \`\`\`
+    
+    
+    ### Contents: ${answers.contents}
+    ### Description ${answers.description}
 
-    ####Installation: ${answers.installation}
-    ####Usage: ${answers.usage}
-    ####Contributors: * ${answers.conttributors}
-    ####Tests: ${answers.tests}
-    ####Questions: ${answers.questions}
+    
+    #### Installation: ${answers.installation}
+    #### Usage: ${answers.usage}
+    #### Contributors: * ${answers.contributors}
+    #### Tests: ${answers.tests}
+    #### Questions: ${answers.questions}
   
   `;
 }

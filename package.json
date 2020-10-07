@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arob0017/README_Generator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/arob0017/README_Generator/issues"
+  },
+  "homepage": "https://github.com/arob0017/README_Generator#readme"
 }

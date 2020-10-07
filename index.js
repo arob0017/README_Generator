@@ -12,17 +12,20 @@ function promptUser() {
         {
             type: "input",
             name: "username",
-            message: "What is your GitHub username?"
+            message: "What is your GitHub username?",
+            default: "arob0017"
         },
         {
             type: "input",
             name: "Repo",
-            message: "What is the name of your GitHub repo?"
+            message: "What is the name of your GitHub repo?",
+            default: "README_Generator",
         },
         {
             type: "input",
             name: "title",
-            message: "What is your projects title?"
+            message: "What is your projects title?",
+            default: "ReadMe Generator"
         },
         {
             type: "input",
@@ -37,7 +40,7 @@ function promptUser() {
         {
             type: "input",
             name: "installation",
-            message: "Please provide your installation instructions"
+            message: "Please provide your installation instructions",
         },
         {
             type: "input",
