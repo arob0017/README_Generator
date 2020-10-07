@@ -45,27 +45,27 @@ function promptUser() {
         {
             type: "input",
             name: "usage",
-            message: "What is your GitHub username?"
+            message: "Please provide examples of your application in use?"
         },
         {
             type: "input",
             name: "license",
-            message: "What is your GitHub username?"
+            message: "What license and/or licenses were used for this project?"
         },
         {
             type: "input",
             name: "contributors",
-            message: "If applicable, please provide contributing parties"
+            message: "If applicable, please provide contributing parties:"
         },
         {
             type: "input",
             name: "tests",
-            message: "What is your GitHub username?"
+            message: "Please provide tests written for your application:?"
         },
         {
             type: "input",
             name: "questions",
-            message: "What is your GitHub username?"
+            message: "Please provide a question/s or anything that has not been covered in these data questions?"
         },
 
     ]);
