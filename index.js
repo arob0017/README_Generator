@@ -77,7 +77,7 @@ async function init() {
     try {
         const answers = await promptUser();
         const readMe = generator(answers);
-        await writeFileAsync("README.md", readMe)
+        await writeFileAsync("index.md", readMe)
         console.log("Successfully wrote to README!")
     } catch (err) {
         console.log(err);
